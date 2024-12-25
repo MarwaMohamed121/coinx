@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدخال معلومات المحفظة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e3a8a; /* اللون الخاص بـ bg-blue-900 */
+            margin: 0;
+            padding: 20px;
+            color: white; /* لضمان وضوح النص */
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+            display: block;
+        }
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container input {
+            cursor: pointer;
+            background-color: #2563eb; /* اللون الخاص بـ bg-blue-600 */
+            color: white; /* النص الأبيض */
+            font-weight: 600; /* font-semibold */
+            padding: 12px 16px; /* py-3 px-4 */
+            border: none;
+            border-radius: 6px; /* rounded-md */
+            margin-top: 24px; /* mt-6 */
+            transition: background-color 0.3s ease; /* transition */
+        }
+        .button-container input:hover {
+            background-color: #1d4ed8; /* اللون الخاص بـ hover:bg-blue-700 */
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h1>إدخال معلومات المحفظة</h1>
+
+        <form action="#" method="post">
+            <!-- اسم المحفظة -->
+            <label for="wallet-name">اسم المحفظة:</label>
+            <input type="text" id="wallet-name" name="wallet-name" placeholder="أدخل اسم المحفظة" required>
+
+            <!-- كلمة السر -->
+            <label for="password">كلمة السر:</label>
+            <input type="password" id="password" name="password" placeholder="أدخل كلمة السر" required>
+
+            <!-- نوع المحفظة -->
+            <label for="wallet-type">نوع المحفظة:</label>
+            <select id="wallet-type" name="wallet-type" required>
+                <option value="">-- اختر نوع المحفظة --</option>
+                <option value="personal">شخصية</option>
+                <option value="business">تجارية</option>
+                <option value="savings">ادخار</option>
+            </select>
+
+            <!-- زر الحفظ -->
+            <div class="button-container">
+                <input type="submit" value="حفظ المعلومات">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

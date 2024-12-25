@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CoinX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- ربط ملف CSS في الhead -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-blue-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="container mx-auto py-4 px-6 flex justify-between items-center" dir="rtl">
+    <div class="text-xl font-semibold">
+        <span class="text-blue-500">CoinX</span>
+    </div>
+    <div class="flex items-center space-x-4 space-x-reverse w-full justify-between">
+        <!-- قائمة التنقل (الروابط) -->
+        <nav class="hidden md:flex space-x-6 space-x-reverse w-full justify-center">
+            <a href="personal.html" class="hover:text-blue-400">الرئيسية</a>
+            <a href="personal.html" class="hover:text-blue-400">الشخصية</a>
+        </nav>
+        
+        <!-- زر تسجيل الدخول والروابط -->
+        <div class="flex space-x-2 space-x-reverse flex-col md:flex-row w-full justify-center md:justify-end">
+            <a href="login.html">
+                <button class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 text-white w-full md:w-auto">تسجيل الدخول</button>
+            </a>
+        </div>
+    </div>
+</header>
+
+
+
+
+  <!-- Hero Section -->
+  <div class="container mx-auto text-center py-10">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
+      التحويل بين العملات والتحويلات المالية الدولية
+    </h1>
+    <p class="mb-8 text-gray-300">
+      ريادة عالمية في مجال معلومات العملات والتحويلات المالية 
+    </p>
+
+    <!-- Currency Converter -->
+    <div class="bg-white rounded-lg shadow-lg text-gray-900 p-6 max-w-lg mx-auto">
+      <div class="flex justify-center mb-4">
+        <button
+        class="px-4 py-2 bg-gray-100 text-gray-700 font-semibold rounded-r-lg hover:bg-gray-200">سحب</button>
+        <button
+          class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-l-lg hover:bg-blue-600">تحويل</button>
+      </div>
+      <div>
+        <label class="block text-right font-semibold mb-2" for="amount">المبلغ</label>
+        <input
+          id="amount"
+          type="text"
+          placeholder="0"
+          class="w-full border border-gray-300 rounded-md py-2 px-3 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        />
+      </div>
+      <div>
+        <label class="block text-right font-semibold mb-2" for="amount">التحويل</label>
+        <input id="amount" type="text" placeholder="0" class="w-full border border-gray-300 rounded-md py-2 px-3 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+      </div>
+      <div class="flex justify-between mt-4">
+        <div>
+          <label class="block text-right font-semibold mb-2" for="from-currency">من</label>
+          <select id="from-currency"
+            class="w-full border border-gray-300 rounded-md py-2 px-3 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            <option>ريال سعودي (SAR)</option>
+            <option>درهم اماراتي  (AED)</option>
+            <option>دينار كويتي (KWD)</option>
+            <option>ريال قطري (QAR)</option>
+            <option>دينار بحريني (BHD)</option>
+            <option>ريال عماني  (OMR)</option>
+            <option> ريال يمني (YER)</option>
+            <option>جنية مصري (EGP)</option>
+            <option>دينار عراقي (IQD)</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-right font-semibold mb-2" for="to-currency">إلى</label>
+          <select id="to-currency"
+            class="w-full border border-gray-300 rounded-md py-2 px-3 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            <option>دولار امريكي (USD)</option>
+          </select>
+        </div>
+      </div>
+      <button
+        class="w-full bg-blue-600 text-white font-semibold py-3 px-4 rounded-md mt-6 hover:bg-blue-700 transition">
+        تحويل
+      </button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+  <p><a href="login.html">هنا</a>.</p>
+</body>
+
+</html>

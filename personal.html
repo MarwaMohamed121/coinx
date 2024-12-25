@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محفظة العميل الشخصية</title>
+    <style>
+        body {
+            font-family: sans-serif; /* font-sans */
+            background-color: #1e3a8a; /* bg-blue-900 */
+            color: white; /* text-white */
+            margin: 0;
+            padding: 48px 16px; /* py-12 px-4 */
+        }
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .balance-container {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .balance-container h3 {
+            color: #444;
+        }
+        .balance-container p {
+            font-size: 16px;
+            color: #555;
+        }
+        .actions-container {
+            text-align: center;
+        }
+        .actions-container button {
+            background-color: #2196F3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            font-size: 16px;
+        }
+        .actions-container button:hover {
+            background-color: #1a76d2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>محفظة العميل الشخصية</h1>
+
+        <!-- معلومات العميل -->
+        <div class="balance-container">
+            <h3>معلومات العميل:</h3>
+            <p>الاسم: <strong>محمد أحمد</strong></p>
+            <p>البريد الإلكتروني: <strong>mohamed@example.com</strong></p>
+        </div>
+
+        <!-- عرض الرصيد الحالي -->
+        <div class="balance-container">
+            <h3>الرصيد الحالي:</h3>
+            <p>دولار أمريكي (USD): <strong>$500</strong></p>
+            <p>بتكوين (BTC): <strong>0.05 BTC</strong></p>
+            <p>إيثريوم (ETH): <strong>1.2 ETH</strong></p>
+        </div>
+
+        <!-- العمليات المتاحة -->
+        <div class="actions-container">
+            <button onclick="window.location.href='deposit.html'">إيداع</button>
+            <button onclick="window.location.href='withdraw.html'">سحب</button>
+            <button onclick="window.location.href='transactions.html'">عرض المعاملات</button>
+        </div>
+    </div>
+</body>
+</html>
+ 
